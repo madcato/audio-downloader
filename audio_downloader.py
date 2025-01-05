@@ -6,9 +6,9 @@ def download_audio(url, output_file=None):
         # Construye el comando de yt-dlp
         command = ["yt-dlp", "-f", "bestaudio", "--extract-audio", "--audio-format", "mp3"]
         if output_file:
-            command.extend(["-o", output_file])
+            command.extend(["-o", "./exports/%(output_file)"])
         else:
-            command.extend(["-o", "%(title)s.%(ext)s"])
+            command.extend(["-o", "./exports/%(title)s.%(ext)s"])
 
         command.append(url)
 
