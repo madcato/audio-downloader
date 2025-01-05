@@ -1,15 +1,21 @@
 # YouTube Audio Downloader
 
-Welcome to the YouTube Audio Downloader repository! This tool allows you to easily download audio from YouTube videos, enabling you to enjoy your favorite music, podcasts, or lectures offline.
+This tool allows you to download audio from YouTube videos. The format exported is **.mp3**
+## Requirements
 
-## Features
-
-- **Download Audio**: Extract audio from YouTube videos in various formats, including MP3, AAC, WAV, and FLAC.
-- **Simple CLI**: Easy-to-use command-line interface (CLI) for quick and efficient downloading.
-- **Direct Link Download**: Simply paste the YouTube video link and start the download process.
+- Python 3.x
+- ffmpeg (for audio extraction). Install on macOS with `brew install ffmpeg`, or follow this instruictions for Windows/Linux [ffmpeg installation guide](https://ffmpeg.org/download.html).
+- Module **yt-dlep** for handling YouTube URLs. Install it with `pip install yt-dlp`.
 
 ## How to Use
 
 1. **Clone Repository**: Clone the repository to your local machine using Git:
    ```bash
-   git clone https://github.com/piyush0663/audio-downloader.git
+   git clone https://github.com/madcato/audio-downloader.git
+   ```
+2. Isntall requirements
+3. Ru with:
+   ```bash
+   python audio_downloader.py <YouTube URL>
+   ```
+4. Downloaded audio files are saved in the **exports** folder.
