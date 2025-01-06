@@ -14,7 +14,7 @@ This tool allows you to download audio from YouTube videos. The format exported 
    git clone https://github.com/madcato/audio-downloader.git
    ```
 2. Isntall requirements
-3. Ru with:
+3. Run with:
    ```bash
    python audio_downloader.py <YouTube URL>
    ```
